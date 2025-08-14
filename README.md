@@ -19,6 +19,10 @@ The dataset includes patient records with features such as age, gender, BMI, glu
   - Age “outliers” below 18 were retained (to capture stroke risk in young patients).  
   - Two extreme BMI values (97.6 and 92) were removed.  
 
+**Feature Correlation Heatmap:**  
+![Feature Correlation Heatmap](stroke_prediction_heatmap.png)  
+*Shows strong collinearity between glucose-related features and expected relationships such as age with marital status and work type.*  
+
 ## Feature Engineering
 - **New Features (domain-inspired):**
   - `bmi_age_ratio` = BMI ÷ Age  
@@ -46,6 +50,14 @@ The dataset includes patient records with features such as age, gender, BMI, glu
 - **Performance:**  
   - Test accuracy: ~0.99  
   - Recall on stroke cases improved with class weighting and threshold tuning, although still constrained by imbalance.  
+
+**Precision-Recall Curve (vs Threshold):**  
+![Precision-Recall Curve](stroke_prediction_pr_curve.png)  
+*Illustrates the trade-off between precision and recall, with a threshold of 0.75 chosen to balance both.*  
+
+**Confusion Matrix:**  
+![Confusion Matrix](stroke_prediction_confusion_matrix.png)  
+*Highlights the strong overall accuracy but also shows the difficulty in capturing the minority (stroke) class.*  
 
 ## Limitations
 - Severe **class imbalance** (~5% stroke) reduces reliability of accuracy as a metric. Recall on the minority class remains the key challenge.  
