@@ -1,4 +1,4 @@
-# Stroke Prediction with Machine Learning (Logistic Regression)
+# Stroke Prediction with Machine Learning
 
 This project explores stroke prediction using a logistic regression model on a [public dataset from Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset). The goal is to apply fundamental supervised learning techniques, perform exploratory data analysis (EDA), engineer meaningful features, and evaluate model performance with considerations around class imbalance.
 
